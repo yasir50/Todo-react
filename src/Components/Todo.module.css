@@ -1,0 +1,28 @@
+.input1 {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  padding-bottom: 12px;
+  gap: 12px;
+}
+.main {
+  width: 30%;
+  margin: auto;
+  padding: 12px;
+
+}
+.InputField3 {
+  padding-bottom: 12px;
+}
+.button {
+  width: 100%;
+}
+.buttonContainer {
+  padding-top: 12px;
+}
+.input2 {
+  padding-bottom: 12px;
+}
+.table{
+  margin-top: 12px;
+}
