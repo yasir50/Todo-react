@@ -9,7 +9,7 @@ export default function Todo() {
     firstName: "",
     lastName: "",
     emailAddress: "",
-    id: (Number ),
+    id: 0,
   });
 
   const [data, setData] = useState([]);
@@ -88,19 +88,19 @@ export default function Todo() {
           </Button>
         </div>
       </div>
-      {data.map((item, index) => (
-        <div className={styles.table}>
-          <Table>
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>FIRST NAME</th>
-                <th>LAST NAME</th>
-                <th>EMAIL ADDRESS</th>
-                <th>DELETE</th>
-              </tr>
-            </thead>
-            <tbody>
+      <div className={styles.table}>
+        <Table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>FIRST NAME</th>
+              <th>LAST NAME</th>
+              <th>EMAIL ADDRESS</th>
+              <th>DELETE</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item, index) => (
               <tr key={index}>
                 <td>{item.id}</td>
                 <td>{item.firstName}</td>
@@ -116,10 +116,10 @@ export default function Todo() {
                   </Button>
                 </td>
               </tr>
-            </tbody>
-          </Table>
-        </div>
-      ))}
+            ))}
+          </tbody>
+        </Table>
+      </div>
     </>
   );
 }
